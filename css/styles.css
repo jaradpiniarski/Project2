@@ -1,0 +1,351 @@
+
+/*--Heading Styles--*/
+
+h1,
+h2 {
+    text-align: center;
+}
+
+.portfolio-header {
+    margin-top: 3em;
+}
+
+footer h2 {
+    margin-top: 3em;
+}
+
+footer {
+    margin: 10px;
+}
+
+.footer-nav {
+    float: right;
+    padding-bottom: 2em;
+    width: 50%;
+}
+
+.footer-nav li {
+    float: right;
+    list-style-type: none;
+    font-size: 100%;
+    padding-right:1em;
+    font-weight: bold;
+}
+
+.name {
+    float: left;
+    padding-bottom: 2em;
+    width: 50%;
+}
+
+.name li {
+    float: left;
+    list-style-type: none;
+    font-size: 100%;
+    margin-left: -30px;
+    font-weight: bold;
+}
+
+.footer-nav-medium {
+    display: none;
+}
+
+/*--Background Styles--*/
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+    color: #4B4B4B;
+}
+
+#wrapper {
+    background-color: #F6F6F6;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 1.5em;
+}
+
+#footer-wrap {
+    background-color: #F6F6F6;
+    padding-top: .1em;
+    overflow: hidden;
+}
+
+#portfolio {
+    padding-bottom: 1em;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*--Paragraph Styles--*/
+
+p {
+    text-align: center;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.contact-info {
+    border-bottom: 1px solid lightgray;
+}
+
+
+/*--List Styles--*/
+
+header ul {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+header ul li {
+    background-color: white;
+    padding: 1em 0em;
+    margin: .5em .5em;
+    font-weight: bold;
+}
+
+
+/*--Link Styles--*/
+
+a:link {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
+
+table a:link,
+a:visited,
+a:active {
+    color: #4B4B4B;
+}
+
+/*--Image Styles--*/
+
+.intro img {
+    width: 70%;
+    display: block;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.portfolio img {
+    width: 95%;
+    display: block;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*===Media Queries===*/
+
+@media (min-width: 768px) {
+
+   
+   /*--Two Column Layout--*/
+
+    .portrait {
+        float: right;
+        width: 50%;
+    }
+
+    .marketing {
+        float: left;
+        width: 50%;
+    }
+
+    .search {
+        float: left;
+        width: 50%;
+    }
+
+    .travel {
+        float: left;
+        width: 50%;
+    }
+
+    .map {
+        float: left;
+        width: 50%;
+    }
+
+    .photo {
+        float: left;
+        width: 50%;
+    }
+
+    .calculator {
+        float: left;
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    /*--List Styles--------------------------------------------------------------------*/
+
+    header ul {
+        margin-top: 2em;
+        margin-bottom: 4em;
+    }
+
+    header ul li {
+        display: inline;
+        background-color: #F6F6F6;
+        font-weight: bold;
+        padding: 0 20px;
+    }
+
+    .footer-nav-medium li  {
+        float: right;
+        list-style-type: none;
+        font-size: 100%;
+        padding-right:1em;
+        font-weight: bold;
+    }
+
+    .name li {
+        margin-top: -1em;
+        font-size: 120%;
+    }
+
+
+    /*--Footer Styles--*/
+
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-nav-medium {
+        display: contents;
+        float: right;
+        padding-bottom: 2em;
+        width: 50%;
+    }
+    
+
+    /*--Image Styles*/
+
+    .portrait img {
+        margin-top: 0px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    .portrait {
+        float: right;
+        width: 50%;
+    }
+    
+    .marketing {
+        float: left;
+        width: 33.33%;
+    }
+
+    .search {
+        float: left;
+        width: 33.33%;
+    }
+
+    .travel {
+        float: left;
+        width: 33.33%;
+    }
+
+    .map {
+        float: left;
+        width: 33.33%;
+    }
+
+    .photo {
+        float: left;
+        width: 33.33%;
+    }
+
+    .calculator {
+        float: left;
+        width: 33.33%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+}
+
+
+/*For some reason, between 1085px and 1123px device width, the columns break and I am unable to fix them without this additional media query*/
+
+@media (min-width: 1085px) and (max-width: 1123px) {
+
+    .portrait {
+        float: right;
+        width: 50%;
+    }
+    
+    .marketing {
+        float: left;
+        width: 32%;
+    }
+
+    .search {
+        float: left;
+        width: 32%;
+    }
+
+    .travel {
+        float: left;
+        width: 32%;
+    }
+
+    .map {
+        float: left;
+        width: 32%;
+    }
+
+    .photo {
+        float: left;
+        width: 32%;
+    }
+
+    .calculator {
+        float: left;
+        width: 32%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+}
