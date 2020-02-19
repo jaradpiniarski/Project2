@@ -254,6 +254,10 @@ a:active {
         width: 50%;
     }
     
+    .intro p {
+        margin: 5%;
+        text-align: left;
+    }
 
     /*--Image Styles*/
 
@@ -264,6 +268,17 @@ a:active {
 
 
 @media (min-width: 1024px) {
+
+    .left-header {
+        float:left;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+
+    .right-nav {
+        float:right;
+        margin-top: 3%;
+    }
 
     .portrait {
         float: right;
@@ -306,6 +321,10 @@ a:active {
         clear: both;
     }
 
+    .intro p {
+        margin-left: 5%;
+        text-align: left;
+    }
 
 }
 
